@@ -34,7 +34,8 @@ body {
 .header {
     background-color: rgb(255, 255, 255, 0.75);
     padding: 25px 0;
-    height: 100px;
+    max-height: 100px;
+    border-bottom: 1px solid rgb(252, 251, 251);
 }
 .logo {
     margin-top: 7px;
@@ -105,7 +106,9 @@ input {
 }
 .busket img {
     margin: 10px;
-
+}
+.products {
+    position: relative;
 }
 .submenu li{
     display: block;
@@ -125,15 +128,202 @@ input {
 }
 .submenu {
 display: none;
+position: absolute;
 }
 .products:hover .submenu{
     display: block;
 }
-.menu > li:hover a {
+.menu li:hover a {
     background-color: #2c71b8;
     color: #fafbfc;
 }
 .submenu li a:hover {
     color: #2c71b8;
     background-color: white;
+}
+.slider {
+    border-bottom: 1px solid rgb(252, 251, 251);
+    height: 400px;
+    background-color: rgb(12, 12, 12, 0.20);
+}
+.sidebar {
+    height: 845px;
+    background-color: rgb(252, 251, 251, 0.20);
+    border-right: 1px solid white;
+}
+.crumbs li{
+    float: left;
+    color: #acc1dd;
+    margin: 30px 0;
+    font-size: 14px;
+}
+.crumbs li:after {
+    clear: both;
+    display: block;
+    content: "";
+}
+.crumbs li a{
+    color: #acc1dd;
+    text-decoration: none;
+    padding: 0 5px;
+    margin: 30px 0;
+}
+.crumbs li a:hover{
+    border-bottom: 1px solid #acc1dd;
+}
+.crumbs {
+    margin-left: 10px;
+}
+.col-md-9 {
+    width: 75%;
+}
+.col-md-8 {
+    width: 66%;
+}
+.col-md-12 {
+    width: 100%;
+}
+.col-md-4 {
+    width: 34%;
+}
+
+.laptops {
+    float: left;
+    color: #acc1dd;
+    padding: 0 0;
+
+}
+.laptops h1 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #f6f7f8;
+}
+.sort {
+    width: 100%;
+    height: 40px;
+    border: 1px solid white;
+    margin-top: 5px;
+    background-color: #2c71b8;
+    font-size: 21px;
+    line-height: 40px;
+    padding-left: 20px;
+    color: white;
+}
+.sor1 {
+    padding: 0 0 0 15px;
+}
+.productslist{
+    float: left;
+    margin: 50px 0 0 25px;
+
+}
+.productcart {
+    float: left;
+    height: 650px;
+    width: 270px;
+    border: 1px solid white;
+    margin: 0 10px;
+    
+}
+.imeges {
+    height: 180px;
+    border-bottom: 1px solid rgb(250, 249, 249);
+    background-color: rgb(250, 249, 249, 0.75);
+    text-align: center;
+    line-height: 180px;
+    position: relative;
+
+}
+.imeges img {
+    vertical-align: middle;
+}
+.icon1 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #548cc5;
+    top: 10px;
+    right: 10px;
+    background-image: url(imeges/icon\ \(8\).png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon2 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #548cc5;
+    top: 50px;
+    right: 10px;
+    background-image: url(imeges/icon\ \(5\).png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon1:hover {
+    background-color: #2c71b8;
+    background-image: url(imeges/icon\ \(6\).png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon2:hover {
+    background-color: #2c71b8;
+    background-image: url(imeges/icon\ \(7\).png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.info h1 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 15px;
+
+}
+.info {
+    padding: 15px 10px 30px 10px;
+    background-color: rgb(55,120,188, 0.75);
+    height: 468px;
+    
+}
+.text{
+    padding-bottom: 15px;
+    font-size: 21px;
+    color: white;
+}
+.strong {
+    font-weight: 600;
+}
+.price {
+    font-size: 38px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    padding: 25px 0;
+}
+.button_more, .button_add {
+    width: 210px;
+    height: 50px;
+    background-color: rgb(55,120,188);
+    border: 1px solid white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+.button_more a, .button_add a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 21px;
+    font-family: 'Roboto', sans-serif;
+}
+.button_add img {
+    padding-left: 5px;
+}
+.button_more:hover, .button_add:hover {
+    background-color: rgb(250, 249, 249, 0.4);
+}
+sup {
+    font-size: 24px;
+    vertical-align: 0.5em;
 }
