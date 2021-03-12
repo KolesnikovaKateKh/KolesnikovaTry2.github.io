@@ -67,9 +67,6 @@ body {
     width: 75%;
     position: relative;
 }
-.busket {
-    width: 25%;
-}
 input {
     width: 200px;
     height: 40px;
@@ -103,9 +100,9 @@ input {
     position: absolute;
     right: 15px;
     top: 5px;
-}
-.busket img {
-    margin: 10px;
+    background-image: url(imeges/icon\ \(1\).png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .products {
     position: relative;
@@ -326,4 +323,20 @@ position: absolute;
 sup {
     font-size: 24px;
     vertical-align: 0.5em;
+}
+.calcProducts {
+    background-color:rgb(55,120,188);
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    position: absolute;
+    top: -4px;
+    right: 43px;
+    z-index: 1;
+}
+.calcProductsNumber {
+    color: #ffffff;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
 }
