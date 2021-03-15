@@ -144,7 +144,7 @@ position: absolute;
     background-color: rgb(12, 12, 12, 0.20);
 }
 .sidebar {
-    height: 845px;
+    height: 865px;
     background-color: rgb(252, 251, 251, 0.20);
     border-right: 1px solid white;
 }
@@ -339,4 +339,52 @@ sup {
     text-align: center;
     line-height: 20px;
     font-size: 12px;
+}
+
+.sidebar h1 {
+    color: #ffffff;
+    margin-left:10px;
+    font-weight: 600;
+    font-size: 21px;
+}
+input[type='checkbox'] {
+    display: none;
+}
+input[type='checkbox']:checked + label::before {
+    background-color: rgb(255, 254, 254);
+}
+
+label:before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    border: 1px solid rgb(255, 254, 254);
+    float: left;
+    margin: 5px 12px 0 0 ;
+}
+label::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.filterText {
+    color: white;
+    font-size: 21px;
+}
+.checkFilter{
+    padding-top: 20px;
+}
+.filter1 {
+    padding: 30px 0 30px 0;
+}
+.filerMoreLink a {
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+}
+.filerMoreLink {
+    text-align: center;
+    margin-bottom: 30px;
 }

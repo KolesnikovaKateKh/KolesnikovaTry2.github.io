@@ -5,8 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+
+        input[type='checkbox'] {
+            display: none;
+        }
+        input[type='checkbox']:checked + label::before {
+            background-color: red;
+        }
+
+        label::before {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            border: 1px solid red;
+        }
+
+    </style>
 </head>
 <body>
+        <input type="checkbox" id="test">
+        <label for="test"></label>
+
     <script src="app.js"></script>
 </body>
 </html>
